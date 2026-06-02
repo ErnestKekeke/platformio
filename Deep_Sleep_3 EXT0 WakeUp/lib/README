@@ -1,0 +1,17 @@
+## Wiring example
+Button between GPIO 4 and 3.3V 
+Use pull-down resistor
+
+## Recommended wiring
+GPIO4 -----> Button -----> 3.3V
+   |
+   |
+  10kΩ
+   |
+  GND
+
+## How it works
+State	Result
+GPIO = HIGH	ESP32 wakes
+GPIO = LOW	stays asleep
+

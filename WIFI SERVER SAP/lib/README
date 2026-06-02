@@ -1,0 +1,58 @@
+# WiFi SERVER - ESP32
+
+## Description
+Use ESP32 as a Local Server Host, to Host a Webpage 
+
+## Hardware
+- ESP32 Dev Board
+- USB Cable
+
+## Features
+- Host a Simple Website
+- Turn and off and LED 
+
+## How to Use
+1. Flash firmware to ESP32
+2. Open Serial Monitor at 115200 baud
+3. Networks will scan every 5 seconds
+
+## Pin Configuration
+| Pin | Function |
+|-----|----------|
+| GPIO 2 | Onboard LED |
+
+## Notes
+## WIFI MODE
+  WiFi.mode(WIFI_AP);   //  Access Point (Server/Host)
+  WiFi.mode(WIFI_STA);  // Station (Client)
+  WiFi.mode(WIFI_AP_STA); //  Both AP and Client at same time
+  WiFi.mode(WIFI_OFF);  // Turn WiFi off
+
+## Valid Subnet Masks Only
+Subnet Mask | Binary Last Octet | Hosts Allowed
+255.255.255.0 00000000 254
+255.255.255.128 10000000 126 
+255.255.255.192 11000000 62
+255.255.255.224 11100000 30
+255.255.255.240 11110000 14
+255.255.255.248 11111000 6
+255.255.255.252 11111100 2
+
+## Other Common Subnet Masks
+Subnet | Max Devices | Use Case
+255.255.255.0 254 Home/small network
+255.255.0.0 65,534 Large network
+255.0.0.0 16 million Very large network
+
+## Parameter	Your Value	Meaning
+ssid	"KTEK_HOST"	Network name
+password	"12345678"	Network password
+channel	1	WiFi channel (1-13)
+hidden	0	0 = visible, 1 = hidden network
+max_connection	1-10	Max devices allowed
+
+
+## Limits
+Default	4 devices
+Minimum	1 device
+Maximum	10 devices

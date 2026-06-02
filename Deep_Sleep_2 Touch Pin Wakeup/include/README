@@ -1,0 +1,12 @@
+## Reason Numeric value	Constant	Meaning
+  0	ESP_SLEEP_WAKEUP_UNDEFINED	Normal boot (not from sleep)
+  1	ESP_SLEEP_WAKEUP_ALL	Not commonly used
+  2	ESP_SLEEP_WAKEUP_EXT0	Wake from external GPIO (EXT0)
+  3	ESP_SLEEP_WAKEUP_EXT1	Wake from multiple GPIOs (EXT1)
+  4	ESP_SLEEP_WAKEUP_TIMER	Wake from timer
+  5	ESP_SLEEP_WAKEUP_TOUCHPAD	Wake from touch sensor
+  6	ESP_SLEEP_WAKEUP_ULP	Wake from ULP coprocessor
+  7	ESP_SLEEP_WAKEUP_GPIO	GPIO wake (legacy/variant)
+  8	ESP_SLEEP_WAKEUP_UART	UART wake
+  9	ESP_SLEEP_WAKEUP_WIFI	Wake from WiFi (rare use)
+  10	ESP_SLEEP_WAKEUP_COCPU	Co-processor wake

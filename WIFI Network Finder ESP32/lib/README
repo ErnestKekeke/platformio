@@ -1,0 +1,34 @@
+# WiFi Network Finder - ESP32
+
+## Description
+Scans and displays available WiFi networks using ESP32.
+
+## Hardware
+- ESP32 Dev Board
+- USB Cable
+
+## Features
+- Scans all nearby WiFi networks
+- Shows SSID, signal strength (dBm), and security type
+
+## How to Use
+1. Flash firmware to ESP32
+2. Open Serial Monitor at 115200 baud
+3. Networks will scan every 5 seconds
+
+
+## Notes
+- Add any extra info here
+
+## RSSI RangeQuality
+  -30 to -50 dBmExcellent
+  -50 to -70 dBmGood
+  -70 to -80 dBmFair
+  -80 to -90 dBmWeak 
+  Below -90 dBmVery Weak
+
+## WIFI MODE
+  WiFi.mode(WIFI_AP);   //  Access Point (Server/Host)
+  WiFi.mode(WIFI_STA);  // Station (Client)
+  WiFi.mode(WIFI_AP_STA); //  Both AP and Client at same time
+  WiFi.mode(WIFI_OFF);  // Turn WiFi off
